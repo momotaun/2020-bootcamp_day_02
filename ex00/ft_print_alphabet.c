@@ -6,22 +6,16 @@
 /*   By: momotaun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/09 10:45:14 by momotaun          #+#    #+#             */
-/*   Updated: 2020/07/09 17:39:56 by momotaun         ###   ########.fr       */
+/*   Updated: 2020/07/10 08:35:41 by momotaun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+void	ft_putchar(char c);
 
-#include <unistd.h>
-
-void ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
-
-void ft_print_alphabet() {
-    char ch;
+void	ft_print_alphabet(void) {
+    char	ch;
    	ch = 'a';
 
-    while(ch <= 'z') {
+    while (ch <= 'z') {
         ft_putchar(ch);
         ch++;
     }
